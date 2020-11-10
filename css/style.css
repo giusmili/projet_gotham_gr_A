@@ -1,0 +1,110 @@
+/* reset css */
+html{
+    font-size: 62.5%;
+    background: #222 url(https://cdn.pocket-lint.com/r/s/1200x/assets/images/149433-tv-feature-what-order-should-you-watch-the-batman-movies-and-shows-image1-gyquc3whrm.jpg)no-repeat fixed center center / cover;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+/* contexte css */
+h1,h2,ol,p{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+/* theme css */
+/* scroll personnalisé */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+/* optimiser pour webkit */
+*::-webkit-scrollbar{
+    width: .7rem;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgb(230, 171, 8);
+    outline: .1rem solid rgb(48, 2, 2);
+}
+:root{
+    --color-bg-default: #3d3838;
+    --color-link: #333;
+    --color-body: #fafafa;
+    --header-color: #fff;
+}
+header, main{
+    max-width: 80rem;
+    border: 0.1rem solid transparent;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.8);
+
+}
+header{
+    margin: 2rem auto 0;
+    padding: .5rem;
+}
+header h1::before{
+    content: '\01F3AC'; /* icone unicode */
+    vertical-align: .3rem;
+    margin-right: .1rem;
+}
+main{
+    padding: .5rem;
+}
+nav ol{
+    padding-left: 3.0rem;
+    margin: 1.0rem 0;
+}
+nav ol li{
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+section h2, nav h2{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--header-color);
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    box-shadow: 0 .3rem 0 #ccc;
+    text-shadow: .1rem .1rem 0 #ccc;
+    color: #fafafa;
+    padding: .5rem;
+}
+/* pour les liens */
+section .history, section .history-geo{
+    transition-duration: 0.9s;
+}
+section .history:target{
+    background-color: var(--color-bg-default);
+}
+section .history-geo:target{
+    background-color:rgba(200,0,0,0.8);
+}
+section img{
+    display: block;
+    width: 100%;
+}
+section p{
+    padding: .5rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+section{
+    padding-bottom: .5rem;
+}
+main footer{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+}
